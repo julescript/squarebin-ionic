@@ -1,17 +1,71 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary" >
+    <ion-item color="primary" no-lines padding-top>
+      <img class="logo" item-start >
+    <button ion-button icon-only item-end (click)="scanBarcode()">
+      <ion-icon name="md-qr-scanner" color="white" id="cam"></ion-icon>
+    </button>
+  </ion-item>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+
+<ion-searchbar class="searc" placeholder="Search Binners"></ion-searchbar>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Julien Hosri</b></h2>
+  <p><b>Founder</b></p>
+  <p>#000001</p>
+  <ion-badge item-end color="primary"><p id="jul">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Nicolas Azzi</b></h2>
+  <p><b>Co-Founder</b></p>
+  <p>#000002</p>
+  <ion-badge item-end color="primary"><p id="nicolas">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Issam Houssami</b></h2>
+  <p><b>SG Student</b></p>
+  <p>#000003</p>
+  <ion-badge item-end color="primary"><p id="issam">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Clara Gemayel</b></h2>
+  <p><b>SG Student</b></p>
+  <p>#000004</p>
+  <ion-badge item-end color="primary"><p id="clara">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Jana Abi Akl</b></h2>
+  <p><b>SG Student</b></p>
+  <p>#000005</p>
+  <ion-badge item-end color="primary"><p id="jana">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon item-start name="md-person" color="primary" ></ion-icon>
+  <h2><b>Jad Khoury</b></h2>
+  <p><b>SG Student</b></p>
+  <p>#000006</p>
+  <ion-badge item-end color="primary"><p id="jad">1</p></ion-badge>
+  </ion-item>
+
+  <ion-item no-lines detail-none text-center padding-top>
+    <p>Made with <span><ion-icon name="md-heart" color="primary"></ion-icon></span>&nbsp; by team <b>Square X</b></p>
+  </ion-item>
+
+
+
+
 </ion-content>
